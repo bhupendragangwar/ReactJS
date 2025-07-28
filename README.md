@@ -47,6 +47,7 @@ It includes code snippets, exercises, and real-world project examples to help yo
 reactjs-learning/
 │
 ├── basics/            # React basics (components, props, state)
+├── Rendering          # React Rendering 
 ├── intermediate/      # Routing, Context API, forms, hooks
 ├── advanced/          # Authentication, Redux, performance
 ├── projects/          # Mini projects & real-world implementations
