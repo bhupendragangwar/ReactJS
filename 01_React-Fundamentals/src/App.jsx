@@ -4,8 +4,9 @@ import {
   PassData,
   LiveUserTypes,
   Counter,
+  DisplayList
 } from "./Components/StatesAndProps";
-import ParentComponent from "./parents/ParentCom";
+import { ValuePass, FunctionPass } from "./parents/ParentCom";
 
 function App() {
   return (
@@ -16,8 +17,11 @@ function App() {
       <PassData name="JavaScript | ReactJS" />
       <LiveUserTypes />
       <Counter />
-      <br />
-      <ParentComponent />
+      <hr />
+      <ValuePass />
+      <FunctionPass />
+      <hr />
+      <DisplayList />
     </>
   );
 }

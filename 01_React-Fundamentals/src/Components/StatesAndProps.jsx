@@ -62,3 +62,26 @@ export const Counter = () => {
   );
 };
 
+// Q8. Create a list of items using state and display them using map().
+
+const listOfItems = [
+  "JavaScript",
+  "ReactJS",
+  "NodeJS",
+  "Express.JS",
+  "HTML",
+  "CSS",
+];
+
+export const DisplayList = () => {
+  const [items, setItems] = useState(listOfItems);
+  return (
+    <div>
+      {items.map((item, index) => (
+        <ul>
+          <li key={index}>{item}</li>
+        </ul>
+      ))}
+    </div>
+  );
+};
