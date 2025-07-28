@@ -24,15 +24,20 @@ It includes code snippets, exercises, and real-world project examples to help yo
 ---
 
 ## 🏗 Topics Covered
-- React Fundamentals (JSX, Components, Props, State)
+- React Fundamentals (JSX, Components, Props, State, Conditional Rendering, Composition)
+- Rendering (Component Lifecycle, Lists & Keys, Renders Props, Refs, events, High Order Components)
+- Hooks (Custom Hooks & Best Practice)
 - Event Handling
 - React Router
-- State Management (Context API, Redux basics)
-- Handling API Calls & Data Fetching
+- State Management (Context API, Redux basics, Zustand)
+- Handling API Calls & Data Fetching (REST - Axios, React-Query | GraphQL - Apollo)
 - Authentication & Authorization
 - React Query & Advanced Data Handling
 - Forms and Validations
+- Testing (Cypress)
+- Types & Validation (TypeScript, ZOD)
 - Performance Optimization
+- Advanced Topics - Error Boundaries, Server APIs, Suspense, Portals, Animation
 - Deployment & Best Practices
 
 ---
