@@ -85,3 +85,38 @@ export const DisplayList = () => {
     </div>
   );
 };
+
+// Q9. Pass a boolean value via props and conditionally render content in the child.
+// Q10. Create a button that changes its label based on a boolean state.
+
+export const CondRen  = ({isLogged}) =>{
+  const [isOn, setIsOn] = useState(false)
+  function handleClick(){
+    setIsOn(prevValue => !prevValue )
+  }
+  return(
+    <div>
+      <h2>Childe Com</h2>
+      <p>{isLogged ? (<h2>User Login</h2>) : (<h2>User Logout</h2>)}</p>
+      <button onClick={handleClick}>
+        {isOn ? 'ON' : 'OFF'}
+      </button>
+
+    </div>
+    
+  )
+}
+
+// Q12. Pass an object as a prop to a child component and destructure it.
+
+export const ObjectPass = ({userDetails}) =>{
+  const {name, surName, age, email} = userDetails
+  return(
+    <>
+      <p>{name}</p>
+      <p>{surName}</p>
+      <p>{age}</p>
+      <p>{email}</p>
+    </>
+  )
+}
