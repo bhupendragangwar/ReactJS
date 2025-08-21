@@ -1,13 +1,19 @@
-import { createContext, useContext, useState } from "react"
+import {createContext, useContext, useState} from 'react'
 
-export let counterContext = createContext()
-export default function MainContext({children}){
-    let [count, setCount] = useState(1)
+// Create a UserContext that stores a username and display 
+// it in multiple components without using props.
+
+// step 1: create userContext
+
+export const UserContext = createContext()
+
+export const UserProvider = ({children})=>{
+    const [userName, setUserName] = useState('Rohit')
+
+    const value = {userName, setUserName}
     return(
-        <counterContext.Provider value={{count, setCount}}>
+        <UserContext.Provider value={value}>
             {children}
-        </counterContext.Provider>
+        </UserContext.Provider>
     )
 }
-
-export let useCount = () => useContext(counterContext)

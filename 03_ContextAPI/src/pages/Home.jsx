@@ -1,21 +1,16 @@
-import {useContext, useState} from 'react'
-import { useCount } from '../contextProvider/MainContext.jsx'
-
-import Header from '../Common/Header.jsx'
+import { useContext } from 'react'
 import Footer from '../Common/Footer.jsx'
+import { UserContext } from '../contextProvider/MainContext.jsx'
 
-// import {counterContext} from '../contextProvider/MainContext.jsx'
 
 export default function Home(){
-
-    let obj = useCount()
-    console.log(obj)
+const {userName} = useContext(UserContext)
+// console.log(obj.userName)
 
     return(
         <div>
-            <Header/>
-            <h3>Welcome to Home Page: {obj.count}</h3>
-            <Footer />
+            <h3>Welcome to Home Page: {userName}</h3>
+            {/* <Footer /> */}
         </div>
     )
 }
