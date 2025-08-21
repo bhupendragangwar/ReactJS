@@ -12,6 +12,10 @@ import { CartProvider } from './cartLogic/Cartcontext'
 import Product from './cartLogic/Product'
 import CartStatus from './cartLogic/CartStatus'
 
+import UserContextProvider from './UserData/UserContextProvider'
+import Login from './UserData/Login'
+import Profile from './UserData/Profile'
+
 function App() {
 
   return (
@@ -20,11 +24,15 @@ function App() {
     // <Home />
     // <Footer />
     // </UserProvider>
-    <CartProvider>
-      <h1>🛒 Shopping Cart with Context API</h1>
-      <Product />
-      <CartStatus />
-    </CartProvider>
+    // <CartProvider>
+    //   <h1>🛒 Shopping Cart with Context API</h1>
+    //   <Product />
+    //   <CartStatus />
+    // </CartProvider>
+    <UserContextProvider>
+      <Login />
+      <Profile />
+    </UserContextProvider>
   )
 }
 
