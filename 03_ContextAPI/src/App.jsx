@@ -13,8 +13,12 @@ import Product from './cartLogic/Product'
 import CartStatus from './cartLogic/CartStatus'
 
 import UserContextProvider from './UserData/UserContextProvider'
-import Login from './UserData/Login'
-import Profile from './UserData/Profile'
+// import Login from './UserData/Login'
+// import Profile from './UserData/Profile'
+
+import AuthContextProvider from './authContext/AuthContextProvider'
+import Login from './authContext/pages/Login'
+import Home from './authContext/pages/Home'
 
 function App() {
 
@@ -29,10 +33,14 @@ function App() {
     //   <Product />
     //   <CartStatus />
     // </CartProvider>
-    <UserContextProvider>
+    // <UserContextProvider>
+    //   <Login />
+    //   <Profile />
+    // </UserContextProvider>
+    <AuthContextProvider>
       <Login />
-      <Profile />
-    </UserContextProvider>
+      <Home />
+    </AuthContextProvider>
   )
 }
 
