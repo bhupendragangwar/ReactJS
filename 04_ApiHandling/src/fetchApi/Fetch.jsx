@@ -17,12 +17,12 @@ const Fetch = () => {
                 }
                 return res.json()
             })
-            .then((data)=>{
+            .then((data) => {
                 console.log(data);
                 setPost(data);
                 setLoading(false)
             })
-            .catch((err)=>{
+            .catch((err) => {
                 setError(err)
                 setLoading(false)
             })
@@ -34,7 +34,7 @@ const Fetch = () => {
         <>
             <h2>Data Fetch from Fetch API</h2>
             <uL>
-                {post.map((data)=>(
+                {post.map((data) => (
                     <li key={data.id}>
                         <h2>{data.id}</h2>
                         <h2>{data.name}</h2>
