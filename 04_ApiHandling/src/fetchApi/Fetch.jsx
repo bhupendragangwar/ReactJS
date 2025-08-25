@@ -23,12 +23,12 @@ const Fetch = () => {
                 setLoading(false)
             })
             .catch((err) => {
-                setError(err)
+                setError(err.message)
                 setLoading(false)
             })
     }, [])
     if (loading) return <p>Loading Post...</p>
-    if (error) return <p>Error: {error.message}</p>
+    if (error) return <p>Error: {error}</p>
 
     return (
         <>
